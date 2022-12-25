@@ -9,7 +9,6 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
@@ -25,9 +24,6 @@ import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 public class Game extends Application {
 
@@ -39,7 +35,6 @@ public class Game extends Application {
     private int duration = 300;
     private int increment = 5;
     private ArrayList<Move> moves = new ArrayList<Move>();
-    private boolean result;
 
     private static class Timer extends AnimationTimer{
         public Label timerLabel = new Label();
